@@ -1,0 +1,24 @@
+﻿body {
+}
+.nav-link{
+    color:darkorchid !important;
+    font-size:20px;
+    font-weight:600;
+}
+.nav-link:hover {
+    animation:navLink ease-in-out;
+    animation-duration:1s;
+    animation-direction:alternate-reverse;
+    color:deeppink;
+    border:groove 2px ;
+}
+@keyframes navLink{
+    to {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+}
+.navbar-brand{
+    color:darkgoldenrod !important;
+}
