@@ -2,7 +2,17 @@
 
 @{
     ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
 }
-
-<h2>Login</h2>
+@section Login{
+    <h1>登入頁面</h1>    
+}
+@using (Html.BeginForm("Attend", "Index", FormMethod.Post))
+{ 
+    @Html.LabelFor(m => m.account)
+    @Html.TextBoxFor(m => m.account)
+    <br />
+    @Html.LabelFor(m => m.password)
+    @Html.TextBoxFor(m=> m.password)
+}
 
